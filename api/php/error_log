@@ -1,0 +1,5 @@
+[21-Apr-2016 23:43:59 UTC] PHP Warning:  file_get_contents(): Invalid php:// URL specified in /home/whatbeer/public_html/api/php/insert_torrent.php on line 5
+[21-Apr-2016 23:43:59 UTC] PHP Warning:  file_get_contents(php://input2): failed to open stream: operation failed in /home/whatbeer/public_html/api/php/insert_torrent.php on line 5
+[21-Apr-2016 23:50:19 UTC] PHP Notice:  Array to string conversion in /home/whatbeer/public_html/api/php/insert_torrent.php on line 11
+[22-Apr-2016 23:04:39 UTC] PHP Notice:  Undefined index: link_type in /home/whatbeer/public_html/api/php/insert_torrent.php on line 9
+[22-Apr-2016 23:21:34 UTC] PHP Notice:  Undefined index: link in /home/whatbeer/public_html/api/php/insert_torrent.php on line 8
