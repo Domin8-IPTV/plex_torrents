@@ -8,11 +8,11 @@ RewriteRule ^(.*)$ $1.html
 
 # Unless directory, remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^/]+)/$ http://whatbeeryougot.com/api/$1 [R=301,L]
+RewriteRule ^([^/]+)/$ http://mydomain.com/api/$1 [R=301,L]
 
 # Redirect external .php requests to extensionless url
 RewriteCond %{THE_REQUEST} ^(.+)\.php([#?][^\ ]*)?\ HTTP/
-RewriteRule ^(.+)\.php$ http://whatbeeryougot.com/api/$1 [R=301,L]
+RewriteRule ^(.+)\.php$ http://mydomain.com/api/$1 [R=301,L]
 
 # Resolve .php file for extensionless php urls
 RewriteRule ^([^/.]+)$ $1.php [L]
