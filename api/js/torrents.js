@@ -6,17 +6,16 @@ app.controller('TorrentController', function($scope, $interval, $http, $sce, API
     $scope.colorState = "danger";
     
     $interval(function() {
-    	console.log($scope.interval);
     	getDownloads();
     },  
     $scope.interval);
         
     API.getNavBar().success(function(response) {            
-	$scope.NavBar = $sce.trustAsHtml(response);   
+        $scope.NavBar = $sce.trustAsHtml(response);   
     });
 
     API.getSideBar().success(function(response) {            
-	$scope.SideBar = $sce.trustAsHtml(response);   
+        $scope.SideBar = $sce.trustAsHtml(response);   
     }); 	
 
     function getDownloads(){
@@ -33,10 +32,9 @@ app.controller('TorrentController', function($scope, $interval, $http, $sce, API
                $scope.Interval = 45000;
                
 	       API.getProgress().success(function(response) {
-	           $scope.Bars = response;	
+	       	   $scope.Bars = response;	
 	       });                           
             }
-
             $scope.Status = $sce.trustAsHtml(returnText);            
         });	
     }    
